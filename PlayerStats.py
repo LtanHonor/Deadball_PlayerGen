@@ -175,12 +175,9 @@ while True:
 
         print(outputPdice)
         if outputPdice == "-d4":
-            print(outputPdice)
             outputPdice = " -d4"
         elif outputPdice == "-d8":
-            print(outputPdice)
             outputPdice = " -d8"
-        print(outputPdice)
 
         if "Pitchers:" in randompHanded:
             if "Pitcher" in randompos:
