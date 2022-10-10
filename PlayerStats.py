@@ -172,8 +172,16 @@ while True:
             outputPdice = randomPdice
         else:
             outputPdice = ""
+
+        print(outputPdice)
         if outputPdice == "-d4":
-            outputPdice = "\'-d4\'"
+            print(outputPdice)
+            outputPdice = " -d4"
+        elif outputPdice == "-d8":
+            print(outputPdice)
+            outputPdice = " -d8"
+        print(outputPdice)
+
         if "Pitchers:" in randompHanded:
             if "Pitcher" in randompos:
                 outputpHanded = "L"
@@ -187,10 +195,6 @@ while True:
             outputBtraits = ""
         else:
             outputBtraits = randomBtraits
-        if "Pitcher" in randompos:
-            outputPdice = randomPdice
-        else:
-            outputPdice = ""
 
         f_0pen.write(prename+" " +surname+","+randompos+","+outputpHanded+","+str(randomBT)+","+str(randomOBT)+","+outputBtraits+","+outputPtraits+","+outputPdice+"\n")
 
