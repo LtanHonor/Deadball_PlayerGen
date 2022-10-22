@@ -1,1 +1,80 @@
-PLAYER NAME,POS,L/R,BT,OBT,Batter TRAITS, Pitcher TRAITS, Pitcher Die
+PLAYER NAME,POS,AGE,L/R,BT,OBT,Batter TRAITS, Pitcher TRAITS, Pitcher Die 
+Michael Adams,Relief Pitcher,24,R,17,22,C+,,d4
+Aaron Lewis,Relief Pitcher,21,L,24,31,,,d4
+Jacob Evans,Starting Pitcher,22,R,25,31,,CN+,d4
+Lucas Martin,Starting Pitcher,21,R,25,30,D-,CN-, -d4
+Liam Thompson,Relief Pitcher,24,R,22,26,P++,,d4
+Jacob King,Left Field,24,R,25,31,,,
+Carter Gómez,First Base,22,R,30,34,,,
+Joshua Gómez,Starting Pitcher,23,R,26,32,S-,,d8
+Jackson Allen,Relief Pitcher,19,L,24,29,,GB+,d4
+Theodore Campbell,Right Field,20,L,35,39,,,
+Luke García,Shortstop,23,R,17,19,P+,,
+Jackson García,Shortstop,22,R,27,30,C+,,
+Cameron Roberts,Right Field,21,R,27,33,D+,,
+Michael Wright,Utility,19,S,27,33,,,
+Mateo Thompson,Left Field,19,S,18,21,P--,,
+Jayden Ramírez,Left Field,19,L,30,34,,,
+Wyatt Taylor,Starting Pitcher,19,R,23,25,,, -d4
+Adrian Allen,Third Base,19,L,26,29,T+,,
+William Wilson,Starting Pitcher,19,L,34,42,,,d4
+Lucas Wilson,Relief Pitcher,19,R,35,42,C-,, -d4
+Joseph Turner,Third Base,19,R,17,20,P--,,
+Caleb Turner,Relief Pitcher,19,L,24,30,D-,, -d4
+Ryan Thompson,Center Field,19,R,17,23,,,
+Mason Phillips,Center Field,19,R,20,27,,,
+Lincoln Wilson,Starting Pitcher,19,R,35,39,,CN-,d8
+James Rivera,Left Field,19,R,35,38,,,
+Jayden Martínez,Center Field,19,L,27,35,,,
+Maverick Hill,Starting Pitcher,19,R,33,36,C-,ST+,d8
+Lincoln Rivera,Starting Pitcher,19,R,32,37,P-,,d8
+Mateo Brown,Second Base,19,S,20,24,P+,,
+Henry Adams,Center Field,19,L,19,26,,,
+Carter Adams,Starting Pitcher,19,R,17,25,D-,CN-,d12
+Theodore Wilson,Starting Pitcher,19,L,26,28,C-,, -d4
+Mateo López,Starting Pitcher,19,L,27,35,D+,,d12
+Liam Wright,Relief Pitcher,19,L,19,25,D+,K+,d8
+Elias Robinson,Relief Pitcher,19,R,29,31,S+,,d4
+Daniel White,Starting Pitcher,19,L,26,30,P--,ST+, -d4
+Carter Davis,Right Field,19,R,23,30,P++,,
+Elijah Brown,Starting Pitcher,19,R,30,32,,,d8
+Andrew Miller,Shortstop,19,R,21,25,S-,,
+Joseph Lewis,Third Base,19,R,17,23,,,
+Theodore Williams,Catcher,19,S,34,38,,,
+Ryan Adams,Starting Pitcher,19,L,33,40,,CN-, -d4
+Leo Nguyen,Catcher,19,R,24,27,P-,,
+Matthew Williams,Starting Pitcher,19,L,28,31,C+,, -d4
+Eli Williams,Relief Pitcher,19,R,25,32,,GB+, -d4
+Gabriel Ramírez,Center Field,27,R,23,30,P--,,
+Henry Torres,Left Field,27,R,21,23,,,
+Thomas Smith,Starting Pitcher,27,L,32,40,,,d4
+Samuel Adams,Relief Pitcher,27,L,35,37,P++,, -d4
+Hudson Scott,Second Base,27,R,30,33,P+,,
+Dylan Smith,Relief Pitcher,27,L,32,35,P+,,d8
+Owen Lewis,Relief Pitcher,27,L,30,34,T+,K+,d8
+James González,Second Base,27,R,28,35,,,
+Levi Martínez,Starting Pitcher,27,R,34,37,T+,,d4
+Maverick Moore,Shortstop,27,S,21,24,C-,,
+Sebastian Turner,Starting Pitcher,27,R,22,30,,,d8
+Wyatt Wilson,Relief Pitcher,27,L,33,41,C+,, -d4
+Luca Thomas,Relief Pitcher,27,R,32,39,,,d4
+Henry Allen,Left Field,27,R,29,34,,,
+Mateo Thompson,Starting Pitcher,27,R,22,30,S-,,d8
+Joseph Rodríguez,Relief Pitcher,27,L,21,28,T+,,d4
+Lincoln Flores,Second Base,27,R,32,35,S-,,
+Jackson Clark,Third Base,27,R,33,38,,,
+Nathan Miller,Shortstop,27,R,19,21,,,
+Isaac Jones,Relief Pitcher,27,L,23,27,S+,,d8
+Noah Wilson,Starting Pitcher,27,R,26,31,,, -d4
+Liam Evans,Starting Pitcher,27,R,34,40,D+,,d4
+Daniel Thompson,Catcher,27,R,30,37,,,
+Mason White,Utility,27,L,27,35,P++,,
+Anthony Flores,Starting Pitcher,27,R,33,41,,,d4
+Leo Lewis,Starting Pitcher,27,R,21,25,,,d4
+Maverick Moore,Relief Pitcher,27,L,25,32,D+,,d8
+Michael Davis,Utility,27,R,35,43,,,
+Matthew Parker,Relief Pitcher,27,R,33,38,,GB+,d8
+Ryan Phillips,First Base,27,R,25,31,,,
+Thomas Miller,Shortstop,27,R,19,23,,,
+Charles Hernández,Shortstop,27,S,28,32,D-,,
+Levi Turner,First Base,27,L,18,22,,,
