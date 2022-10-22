@@ -5,7 +5,7 @@ This is a simple program, written in Python3, that will generate a random ball p
 
 ## The Main Program Window
 
-![[MainProgram.png]]
+![](/images/MainProgram.png)
 
 Here is the main window for the program.  In the top left is a link that will take you to the DriveThruRPG page to purchase Deadball in its current and second edition.  Underneath this button is where a single player's stats will be displayed after generation.  Below that is a text box that has very coarse and simple instructions on using the program.
 
