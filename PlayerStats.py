@@ -139,7 +139,7 @@ def CreateTeam ():
     justChecked = [element for element in values if values[element]==True
                    and 'AGE' in element]
     return_value = sg.popup_get_file('', no_window=True, save_as=True, default_path='filename', file_types=(("Comma Separated Values","*.csv"),))
-
+    pAge = randAge(random.randint(1,4))
     if len(justChecked) > 1:
         window['-OPTIONERROR-'].update("\n Only ONE age option is allowed.  Nothing Generated!")
     elif len(justChecked) < 1:
@@ -149,9 +149,9 @@ def CreateTeam ():
         thisLoop = totalPlayers
         thisLoop = int(thisLoop)
         thisString
-        randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+        randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
         while randompos != "Left Field":
-            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
         pAge = randAge(random.randint(1,4))
         outputPtraits = checkBatter(randomPtraits)
         outputPdice = checkPitcher(randompos,randomPdice)
@@ -159,7 +159,7 @@ def CreateTeam ():
         outputBtraits = checkbTraits(randomBtraits)
         thisString.append(prename+" " +surname+","+randompos+","+str(pAge)+","+outputpHanded+","+str(randomBT)+","+str(randomOBT)+","+outputBtraits+","+outputPtraits+","+outputPdice+"\n")
         while randompos != "Center Field":
-            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
         pAge = randAge(random.randint(1,4))
         outputPtraits = checkBatter(randomPtraits)
         outputPdice = checkPitcher(randompos,randomPdice)
@@ -167,7 +167,7 @@ def CreateTeam ():
         outputBtraits = checkbTraits(randomBtraits)
         thisString.append(prename+" " +surname+","+randompos+","+str(pAge)+","+outputpHanded+","+str(randomBT)+","+str(randomOBT)+","+outputBtraits+","+outputPtraits+","+outputPdice+"\n")
         while randompos != "Catcher":
-            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
         pAge = randAge(random.randint(1,4))
         outputPtraits = checkBatter(randomPtraits)
         outputPdice = checkPitcher(randompos,randomPdice)
@@ -175,7 +175,7 @@ def CreateTeam ():
         outputBtraits = checkbTraits(randomBtraits)
         thisString.append(prename+" " +surname+","+randompos+","+str(pAge)+","+outputpHanded+","+str(randomBT)+","+str(randomOBT)+","+outputBtraits+","+outputPtraits+","+outputPdice+"\n")
         while randompos != "Right Field":
-            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
         pAge = randAge(random.randint(1,4))
         outputPtraits = checkBatter(randomPtraits)
         outputPdice = checkPitcher(randompos,randomPdice)
@@ -183,7 +183,7 @@ def CreateTeam ():
         outputBtraits = checkbTraits(randomBtraits)
         thisString.append(prename+" " +surname+","+randompos+","+str(pAge)+","+outputpHanded+","+str(randomBT)+","+str(randomOBT)+","+outputBtraits+","+outputPtraits+","+outputPdice+"\n")
         while randompos != "First Base":
-            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
         pAge = randAge(random.randint(1,4))
         outputPtraits = checkBatter(randomPtraits)
         outputPdice = checkPitcher(randompos,randomPdice)
@@ -191,7 +191,7 @@ def CreateTeam ():
         outputBtraits = checkbTraits(randomBtraits)
         thisString.append(prename+" " +surname+","+randompos+","+str(pAge)+","+outputpHanded+","+str(randomBT)+","+str(randomOBT)+","+outputBtraits+","+outputPtraits+","+outputPdice+"\n")
         while randompos != "Second Base":
-            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
         pAge = randAge(random.randint(1,4))
         outputPtraits = checkBatter(randomPtraits)
         outputPdice = checkPitcher(randompos,randomPdice)
@@ -199,7 +199,7 @@ def CreateTeam ():
         outputBtraits = checkbTraits(randomBtraits)
         thisString.append(prename+" " +surname+","+randompos+","+str(pAge)+","+outputpHanded+","+str(randomBT)+","+str(randomOBT)+","+outputBtraits+","+outputPtraits+","+outputPdice+"\n")
         while randompos != "Third Base":
-            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
         pAge = randAge(random.randint(1,4))
         outputPtraits = checkBatter(randomPtraits)
         outputPdice = checkPitcher(randompos,randomPdice)
@@ -207,7 +207,7 @@ def CreateTeam ():
         outputBtraits = checkbTraits(randomBtraits)
         thisString.append(prename+" " +surname+","+randompos+","+str(pAge)+","+outputpHanded+","+str(randomBT)+","+str(randomOBT)+","+outputBtraits+","+outputPtraits+","+outputPdice+"\n")
         while randompos != "Shortstop":
-            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
         pAge = randAge(random.randint(1,4))
         outputPtraits = checkBatter(randomPtraits)
         outputPdice = checkPitcher(randompos,randomPdice)
@@ -216,9 +216,9 @@ def CreateTeam ():
         thisString.append(prename+" " +surname+","+randompos+","+str(pAge)+","+outputpHanded+","+str(randomBT)+","+str(randomOBT)+","+outputBtraits+","+outputPtraits+","+outputPdice+"\n")
         thisString.append("Bench \n")
         while InfieldBench > 0:
-            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
             while randompos in("Left Field", "Right Field", "Center Field", "Catcher", "Starting Pitcher", "Relief Pitcher"):
-                randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+                randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
             pAge = randAge(random.randint(1,4))
             outputPtraits = checkBatter(randomPtraits)
             outputPdice = checkPitcher(randompos,randomPdice)
@@ -229,9 +229,9 @@ def CreateTeam ():
             thisString.append(prename+" " +surname+","+randompos+","+str(pAge)+","+outputpHanded+","+str(randomBT)+","+str(randomOBT)+","+outputBtraits+","+outputPtraits+","+outputPdice+"\n")
             InfieldBench = InfieldBench - 1
         while OutfieldBench > 0:
-            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
             while randompos in ("First Base", "Second Base", "Third Base", "Shortstop", "Starting Pitcher", "Relief Pitcher", "Catcher"):
-                randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+                randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
             pAge = randAge(random.randint(1,4))
             outputPtraits = checkBatter(randomPtraits)
             outputPdice = checkPitcher(randompos,randomPdice)
@@ -242,9 +242,9 @@ def CreateTeam ():
             thisString.append(prename+" " +surname+","+randompos+","+str(pAge)+","+outputpHanded+","+str(randomBT)+","+str(randomOBT)+","+outputBtraits+","+outputPtraits+","+outputPdice+"\n")
             OutfieldBench = OutfieldBench - 1
         while CatcherBench > 0:
-            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
             while randompos in ("First Base", "Second Base", "Third Base", "Shortstop", "Starting Pitcher", "Relief Pitcher", "Left Field", "Right Field", "Center Field", "Utility"):
-                randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+                randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
             pAge = randAge(random.randint(1,4))
             outputPtraits = checkBatter(randomPtraits)
             outputPdice = checkPitcher(randompos,randomPdice)
@@ -256,9 +256,9 @@ def CreateTeam ():
             CatcherBench = CatcherBench - 1
         thisString.append("Pitchers \n")
         while StartingPitchers > 0:
-            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
             while randompos in ("First Base", "Second Base", "Third Base", "Shortstop", "Catcher", "Relief Pitcher", "Left Field", "Right Field", "Center Field", "Utility"):
-                randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+                randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
             pAge = randAge(random.randint(1,4))
             outputPtraits = checkBatter(randomPtraits)
             outputPdice = checkPitcher(randompos,randomPdice)
@@ -269,9 +269,9 @@ def CreateTeam ():
             thisString.append(prename+" " +surname+","+randompos+","+str(pAge)+","+outputpHanded+","+str(randomBT)+","+str(randomOBT)+","+outputBtraits+","+outputPtraits+","+outputPdice+"\n")
             StartingPitchers = StartingPitchers - 1
         while ReliefPitchers > 0:
-            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+            randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
             while randompos in ("First Base", "Second Base", "Third Base", "Shortstop", "Catcher", "Starting Pitcher", "Left Field", "Right Field", "Center Field", "Utility"):
-                randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer()
+                randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
             pAge = randAge(random.randint(1,4))
             outputPtraits = checkBatter(randomPtraits)
             outputPdice = checkPitcher(randompos,randomPdice)
