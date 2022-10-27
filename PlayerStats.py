@@ -319,6 +319,7 @@ with open('surnames.txt',encoding = 'utf-8') as f_sNames:
 f_sNames.close()
 secondNames = [x[:-1] for x in secondNames]
 
+# The following arrays are created to replicate the chances that are in the rules
 positions = [
     "Utility", "Catcher", "First Base", "Second Base", "Third Base", "Shortstop",
     "Left Field", "Center Field", "Right Field", "Starting Pitcher",
@@ -353,8 +354,8 @@ bTraits = [
 ]
 
 sg.theme('DarkBlue8')   # Add a touch of color
-# All the stuff inside your window.
 
+# All the stuff inside your window.
 textList = [
     [sg.Text("Player Name: ", size=(12,1)), sg.Text('', key='-1stNAMES-'),sg.Text('', key='-2ndNAMES-')],
     [sg.Text("Player Age: ", size=(12,1)), sg.Text('', key='-AGE-')],
@@ -403,6 +404,7 @@ CreateButtons = [
     [sg.Push(),sg.Button("Bulk Generate")],
 ]
 
+# This is where the actual layout is setup for the window components
 layout = [
     [sg.Button('Get Deadball by W.M. Akers', key = 'LINK1'),sg.Push(),
      sg.Text("Select for \"Ancient\" Players"),
@@ -419,9 +421,10 @@ layout = [
      sg.Button("Save Player"),
      sg.Button("Random Team")]
 ]
-
+# This is where the window is called and created
 window = sg.Window("Deadball Player Creator", layout, element_justification='l', size=(900, 600), resizable=True, return_keyboard_events=True)
 
+# Until something is done, continue running the program
 while True:
     event, values = window.read()
     # End program if user closes window or
@@ -542,7 +545,7 @@ while True:
                 pAge = 18 + rValue
             randomBT,randomOBT,pAge,randompos,prename,surname,pTraits,pDiceAnch,pDiceMod,randomPdice,randomPtraits,randomBtraits,pHanded,randompHanded = createPlayer(pAge)
             updatePlayer(randomBtraits,randompHanded,randomPdice,randomPtraits,surname,prename,randompos,randomOBT,randomBT,pAge)
-
+#Something is done... stop the program
     if event == "Close" or event == sg.WIN_CLOSED:
         break
 window.close()
