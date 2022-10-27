@@ -1,7 +1,7 @@
 # The Deadball Player Generator
 
 
-This is a simple program, written in Python3, that will generate a random ball player for the RPG _**Deadball**_ by _**W.M.Akers**_.  It has the option to save the player to a csv file, **C**omma **S**eparated **V**alues, or you can copy it directly to a roster.  In addition to a single player, the program can generate a vast number of players to create a talent pool using _**Bulk Generate**_, and has the option to create a _**Random Team**_.
+This is a simple program, written in Python3, that will generate a random ball player for the RPG _**Deadball**_ by _**W.M.Akers**_ { https://wmakers.net/deadball }.  It has the option to save the player to a csv file, **C**omma **S**eparated **V**alues, or you can copy it directly to a roster.  In addition to a single player, the program can generate a vast number of players to create a talent pool using _**Bulk Generate**_, and has the option to create a _**Random Team**_.
 
 ## Prerequisites and Installation
 
@@ -10,8 +10,11 @@ This program requires python 3 to be installed. https://www.python.org/downloads
 To install the required modules, open a terminal/command prompt and go to the Deadball directory then use:
 
 pip install -r requirements.txt
+
 or
+
 python -m pip install -r reuirements.txt
+
 
 Once PySimpleGui is installed, the program is run by:
 
