@@ -56,4 +56,4 @@ _**surnames.txt**_ : This is the last name file list that can be modified to inc
 
 _**PlayerPool.csv**_ : This is the player pool list in which players can be "drafted" from for your team
 
-_**PlayerPool.xlsx**_ : This is a Microsoft Excel file that pulls in the data from the PlayerPool.csv so that the csv file can still be updated by the program.  It is merely here as a simple addition to help speed up the flow a bit and is not necesary if you don't want to use it.  It also allows for a quick view of how the data can be viewed in a spreadsheet application
+_**TeamBuilder.xlsx**_ : This is a Microsoft Excel file that pulls in the data from the PlayerPool.csv so that the csv file can still be updated by the program.  It is merely here as a simple addition to help speed up the flow a bit and is not necesary if you don't want to use it.  It also allows for a quick view of how the data can be viewed in a spreadsheet application
