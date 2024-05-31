@@ -1,11 +1,29 @@
 # The Deadball Player Generator
 
 
-This is a simple program, written in Python3, that will generate a random ball player for the RPG _**Deadball**_ by _**W.M.Akers**_.  It has the option to save the player to a csv file, **C**omma **S**eparated **V**alues, or you can copy it directly to a roster.  In addition to a single player, the program can generate a vast number of players to create a talent pool using _**Bulk Generate**_, and has the option to create a _**Random Team**_.
+This is a simple program, written in Python3, that will generate a random ball player for the RPG _**Deadball**_ by _**W.M.Akers**_ { https://wmakers.net/deadball }.  It has the option to save the player to a csv file, **C**omma **S**eparated **V**alues, or you can copy it directly to a roster.  In addition to a single player, the program can generate a vast number of players to create a talent pool using _**Bulk Generate**_, and has the option to create a _**Random Team**_.
+
+## Prerequisites and Installation
+
+This program requires python 3 to be installed. https://www.python.org/downloads/
+
+To install the required modules, open a terminal/command prompt and go to the Deadball directory then use:
+
+pip install -r requirements.txt
+
+or
+
+python -m pip install -r reuirements.txt
+
+
+Once PySimpleGui is installed, the program is run by:
+
+python PlayerStats.py
+
 
 ## The Main Program Window
 
-![[MainProgram.png]]
+
 ![](./images/MainProgram.png)
 
 Here is the main window for the program.  In the top left is a link that will take you to the DriveThruRPG page to purchase Deadball in its current and second edition.  Underneath this button is where a single player's stats will be displayed after generation.  Below that is a text box that has very coarse and simple instructions on using the program.
@@ -38,4 +56,7 @@ _**surnames.txt**_ : This is the last name file list that can be modified to inc
 
 _**PlayerPool.csv**_ : This is the player pool list in which players can be "drafted" from for your team
 
-_**TeamBuilder.xlsx**_ : This is a Microsoft Excel file that pulls in the data from the PlayerPool.csv so that the csv file can still be updated by the program.  It is merely here as a simple addition to help speed up the flow a bit and is not necessary if you don't want to use it.  It also allows for a quick view of how the data can be viewed in a spreadsheet application
+_**PlayerPool.xlsx**_ : This is a Microsoft Excel file that pulls in the data from the PlayerPool.csv so that the csv file can still be updated by the program.  It is merely here as a simple addition to help speed up the flow a bit and is not necesary if you don't want to use it.  It also allows for a quick view of how the data can be viewed in a spreadsheet application
+
+Published under the Based On Akers Games license : https://akersgames.com/license
+![](./images/BasedOnAkersGames_sm.png)
