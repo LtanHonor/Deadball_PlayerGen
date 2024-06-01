@@ -391,8 +391,8 @@ CreateButtons = [
 
 # This is where the actual layout is setup for the window components
 layout = [
-    [sg.Button('Get Deadball by W.M. Akers', key = 'LINK1'),sg.Push(),
-     sg.Image('./images/BasedOnAkersGames_sm.png', subsample=3),
+    [sg.Button(image_filename='./images/BasedOnAkersGames_sm.png', image_subsample=4, button_color=(sg.theme_background_color(),sg.theme_background_color()), border_width=0, key='LINK3'),
+     sg.Button('Get Deadball by W.M. Akers', key = 'LINK1'),sg.Push(),
      sg.Text("Select for \"Ancient\" Players"),
      sg.Checkbox('Ancient Era', default=False, key='-ERA-')],
     [sg.Push(),
@@ -408,7 +408,7 @@ layout = [
      sg.Button("Random Team")]
 ]
 # This is where the window is called and created
-window = sg.Window("Deadball Player Creator", layout, element_justification='l', size=(900, 600), resizable=True, return_keyboard_events=True)
+window = sg.Window("Deadball Player Creator", layout, element_justification='l', size=(980, 640), resizable=True, return_keyboard_events=True)
 
 # Until something is done, continue running the program
 while True:
@@ -420,6 +420,9 @@ while True:
 
     if event in ('LINK1', 'LINK2'):
         webbrowser.open("https://www.drivethrurpg.com/product/395133/Deadball-Baseball-With-Dice-Second-Edition")
+    
+    if event in ('LINK3', 'LINK4'):
+        webbrowser.open("https://akersgames.com/license")
 
     if event == "Save Player":
         f_0pen = open('PlayerPool.csv', 'a',encoding='utf-8')
