@@ -13,7 +13,8 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 import pandas as pd
 
-pdfmetrics.registerFont(TTFont('CousineNFC', 'CousineRNFC.ttf'))
+# pdfmetrics.registerFont(TTFont('CousineNFC', 'CousineRNFC.ttf')) # This is what I want to use, but that requires font installation for reportlab
+pdfmetrics.registerFont(TTFont('CousineNFC', 'Vera.ttf'))
 
 style = TableStyle([('FONT', (0, 0), (6, 0), 'CousineNFC'),  
                     ('ALIGN',(1,1),(-2,-2),'RIGHT'),
