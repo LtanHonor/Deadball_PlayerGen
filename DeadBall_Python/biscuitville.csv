@@ -1,0 +1,28 @@
+PLAYER NAME,POS,AGE,L/R,BT,OBT,Batter TRAITS, Pitcher TRAITS, Pitcher Die 
+Elijah Johnson,Left Field,28,R,20,26,P+,,
+Elias Carter,Center Field,25,S,25,31,,,
+Samuel Mitchell,Catcher,27,R,28,30,,,
+Miles Wright,Right Field,19,L,24,32,P-,,
+Elias Lee,First Base,24,R,32,34,S+,,
+Adrian Allen,Second Base,38,R,19,25,,,
+Joshua Campbell,Third Base,19,S,23,30,C+,,
+Santiago Clark,Shortstop,24,R,20,28,C-,,
+Bench 
+Oliver Hall,INF,33,L,32,37,,,
+Sebastian Johnson,INF,23,R,27,33,D-,,
+Owen Gómez,OF,33,L,19,23,,,
+Maverick Anderson,OF,19,R,34,38,S+,,
+Cameron Martin,C,38,R,20,27,P-,,
+Pitchers 
+Oliver Torres,SP,24,L,32,35,,,d4
+Luca Martínez,SP,25,R,17,21,,CN-,d4
+Grayson King,SP,30,R,18,23,C-,CN-, -d4
+William Allen,SP,25,L,26,30,,,d8
+Anthony Moore,SP,24,R,23,29,,,d4
+Aiden Allen,RP,32,R,17,25,P-,, -d4
+Jacob Parker,RP,24,L,25,33,,, -d4
+Logan Scott,RP,21,R,19,23,C-,CN+,d8
+Ethan Phillips,RP,31,L,21,29,S+,K+,d8
+James Ramírez,RP,25,R,32,36,,,d8
+Joshua Adams,RP,36,L,25,33,,, -d4
+Alexander Rodríguez,RP,36,L,25,32,T+,,d12
