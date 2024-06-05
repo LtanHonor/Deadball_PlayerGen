@@ -1,28 +1,28 @@
 PLAYER NAME,POS,AGE,L/R,BT,OBT,Batter TRAITS, Pitcher TRAITS, Pitcher Die 
-Charles Turner,Left Field,29,R,25,29,C+,,
-Sebastian Mitchell,Center Field,21,S,25,29,D-,,
-Nathan Smith,Catcher,27,L,29,35,S-,,
-Luca Rivera,Right Field,24,L,22,30,T+,,
-Ryan Allen,First Base,31,R,35,42,P--,,
-Asher Smith,Second Base,25,R,32,39,,,
-William Robinson,Third Base,22,L,34,37,C+,,
-Mateo Hall,Shortstop,36,L,19,21,P-,,
+Daniel Mitchell,Left Field,24,R,23,30,,,
+Noah Hill,Center Field,22,R,23,25,C-,,
+John Hill,Catcher,36,S,28,34,S-,,
+Ryan Brown,Right Field,29,L,28,33,,,
+Jacob Ramírez,First Base,24,S,18,26,P--,,
+Joshua Parker,Second Base,30,R,29,34,P++,,
+Dylan Scott,Third Base,38,R,26,29,,,
+Luca Taylor,Shortstop,21,L,35,41,P+,,
 Bench 
-Owen Evans,INF,19,R,32,34,D+,,
-Jackson Young,INF,22,R,17,23,D+,,
-Nolan Smith,OF,32,R,32,37,P-,,
-Miles Turner,OF,26,R,28,34,,,
-Joshua Miller,C,26,R,23,30,P-,,
+Lucas Baker,INF,33,L,34,38,C+,,
+Benjamin Gómez,INF,19,R,19,23,,,
+Joseph Pérez,OF,26,R,30,36,,,
+Charles Roberts,OF,27,R,29,37,P-,,
+Nathan White,C,29,R,28,36,,,
 Pitchers 
-Isaac Lee,SP,32,L,26,29,P+,, -d4
-Andrew Mitchell,SP,25,L,18,21,,CN+,d4
-Miles Gómez,SP,38,R,27,29,C+,GB+,d12
-Maverick Mitchell,SP,24,R,28,30,P-,ST+,d4
-James Robinson,SP,19,R,19,24,,GB+,d8
-Maverick Harris,RP,29,R,17,22,,ST+,d4
-Wyatt Campbell,RP,32,L,21,28,,CN-,d4
-Christopher Evans,RP,23,R,23,29,,,d4
-Theodore Evans,RP,34,R,31,36,S+,,d4
-Caleb Lee,RP,38,R,19,26,S+,,d4
-Owen Baker,RP,20,L,27,35,P++,, -d4
-John Rodríguez,RP,34,R,19,24,P++,K+,d4
+Ryan Lewis,SP,21,R,19,22,,,d4
+Henry Rodríguez,SP,31,R,35,39,P+,,d4
+Mason Jackson,SP,26,L,22,28,,CN-,d8
+Isaac Rodríguez,SP,32,L,32,39,P+,GB+,d8
+William Jackson,SP,19,R,21,26,P+,, -d4
+Ezekiel Jones,RP,35,L,24,29,,, -d4
+Dylan Baker,RP,19,L,25,29,S+,,d4
+Aiden Scott,RP,28,L,30,35,,,d8
+James King,RP,24,L,27,35,C+,ST+,d4
+Asher White,RP,23,R,33,37,P++,,d8
+Jackson Hill,RP,32,R,24,27,C-,, -d4
+Theodore Miller,RP,23,R,33,37,S+,, -d4

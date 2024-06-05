@@ -24,11 +24,34 @@ style = TableStyle([('FONT', (0, 0), (6, 0), 'CousineNFC'),
                     ('ALIGN',(0,-1),(-1,-1),'CENTER'),
                     ('VALIGN',(0,-1),(-1,-1),'MIDDLE'),
                     ('TEXTCOLOR',(0,-1),(-1,-1),colors.black),
+                    ('ALIGN',(0,-1),(-1,-1),'CENTER'),
+                    ('VALIGN',(0,-1),(-1,-1),'MIDDLE'),
+                    ('TEXTCOLOR',(0,-1),(-1,-1),colors.black),
+                    ('ALIGN',(0,-1),(-1,-1),'CENTER'),
+                    ('VALIGN',(0,-1),(-1,-1),'MIDDLE'),
+                    ('TEXTCOLOR',(0,-1),(-1,-1),colors.black),
+                    ('ALIGN',(0,-1),(-1,-1),'CENTER'),
+                    ('VALIGN',(0,-1),(-1,-1),'MIDDLE'),
+                    ('TEXTCOLOR',(0,-1),(-1,-1),colors.black),
+                    ('ALIGN',(0,-1),(-1,-1),'CENTER'),
+                    ('VALIGN',(0,-1),(-1,-1),'MIDDLE'),
+                    ('TEXTCOLOR',(0,-1),(-1,-1),colors.black),
+                    ('ALIGN',(0,-1),(-1,-1),'CENTER'),
+                    ('VALIGN',(0,-1),(-1,-1),'MIDDLE'),
+                    ('TEXTCOLOR',(0,-1),(-1,-1),colors.black),
+                    ('ALIGN',(0,-1),(-1,-1),'CENTER'),
+                    ('VALIGN',(0,-1),(-1,-1),'MIDDLE'),
+                    ('TEXTCOLOR',(0,-1),(-1,-1),colors.black),
                     ('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),
                     ('BOX', (0,0), (-1,-1), 0.25, colors.black),                  
                     ])
 
 csvHeader = "PLAYER NAME,POS,AGE,L/R,BT,OBT,Batter TRAITS, Pitcher TRAITS, Pitcher Die \n"
+
+def get_file_name(file_path):
+    file_path_components = file_path.split('/')
+    file_name_and_extension = file_path_components[-1].rsplit('.', 1)
+    return file_name_and_extension[0]
 
 def randAge(randInput):
     justChecked = [element for element in values if values[element]==True
@@ -288,33 +311,38 @@ def CreateTeam ():
                 randompos = "RP"
             thisString.append(prename+" " +surname+","+randompos+","+str(pAge)+","+outputpHanded+","+str(randomBT)+","+str(randomOBT)+","+outputBtraits+","+outputPtraits+","+outputPdice+"\n")
             ReliefPitchers = ReliefPitchers - 1
-    # Step 2: Create a DataFrame with your data
-    # This is just an example, replace with your actual data
-    data_dict = {'Player Name' : [prename+' '+surname],'Pos' : [randompos],'L/R' : [outputpHanded], 'Random BT': [randomBT], 'Random OBT': [randomOBT], 'Traits' : [outputBtraits], 'Pitcher Traits' : [outputPtraits], 'Pitcher Die' : [outputPdice]}
+    # Create a DataFrame with the generated data
+    data_dict = {'Player Name' : [prename+' '+surname],'Pos' : [randompos], 'Age' : [pAge], 'L/R' : [outputpHanded], 'Random BT': [randomBT], 'Random OBT': [randomOBT], 'Traits' : [outputBtraits], 'Pitcher Traits' : [outputPtraits], 'Pitcher Die' : [outputPdice]}
     df = pd.DataFrame(data_dict)
     elems = []
-    # Step 3: Convert DataFrame to list of lists
+    # Convert DataFrame to list of lists
     data = df.values.tolist()
     # Add the column names as the first list in the list of lists
     data.insert(0, df.columns.tolist())
     r_0pen = open(return_value, 'w',encoding='utf-8')
+    # Getting the filename to use for the PDF's name
+    thisFile = r_0pen.name
     r_0pen.write(csvHeader)
     for line in thisString:
         r_0pen.write(line)
-        team_pd = pd.Series(line.split(","))
-        team_list = team_pd.tolist()
-        data.append(team_list)
+        # Skipping the lines that contain the following:
+        if ("Bench" in line or "Pitchers" in line or "Active" in line):
+            pass
+        # Otherwise the line is a player and should be added to the list
+        else:
+            team_pd = pd.Series(line.split(","))
+            team_list = team_pd.tolist()
+            data.append(team_list)
     r_0pen.close()
+    # Setting up the table
     table = Table(data)
+    # Applying the style created earlier
     table.setStyle(style)
     elems.append(table)
-    # Step 4: Create a PDF with reportlab
-    pdf = SimpleDocTemplate("PlayerStats.pdf", pagesize=landscape(letter), rightMargin=0, leftMargin=0, topMargin=0, bottomMargin=0)
+    # Creating a PDF with reportlab
+    pdf = SimpleDocTemplate(os.path.splitext(thisFile)[0] + ".pdf", pagesize=landscape(letter), rightMargin=0, leftMargin=0, topMargin=0, bottomMargin=0)
     #pdf.setFont("CousineNFC", 10)
     pdf.build(elems)
-    #del(r_0pen)
-    #r_0pen = open(retur, 'w',encoding='utf-8')
-    #thisString.clear()
     return
 
 def updatePlayer(randomBtraits,randompHanded,randomPdice,randomPtraits,surname,prename,randompos,randomOBT,randomBT,pAge):
