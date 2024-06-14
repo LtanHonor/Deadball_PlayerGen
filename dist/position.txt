@@ -1,0 +1,20 @@
+Utility
+Catcher
+First Base
+Second Base
+Third Base
+Shortstop
+Left Field
+Center Field
+Right Field
+Starting Pitcher
+Starting Pitcher
+Starting Pitcher
+Starting Pitcher
+Starting Pitcher
+Starting Pitcher
+Relief Pitcher
+Relief Pitcher
+Relief Pitcher
+Relief Pitcher
+Relief Pitcher
