@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 or
 
-python -m pip install -r reuirements.txt
+python -m pip install -r requirements.txt
 
 
 Once PySimpleGui is installed, the program is run by:
