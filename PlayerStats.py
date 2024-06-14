@@ -14,7 +14,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 import pandas as pd
 
 # pdfmetrics.registerFont(TTFont('CousineNFC', 'CousineRNFC.ttf')) # This is what I want to use, but that requires font installation for reportlab
-pdfmetrics.registerFont(TTFont('CousineNFC', 'Vera.ttf'))
+#pdfmetrics.registerFont(TTFont('CousineNFC', 'Vera.ttf'))
 
 style = TableStyle([('FONT', (0, 0), (6, 0), 'CousineNFC'),  
                     ('ALIGN',(1,1),(-2,-2),'RIGHT'),
@@ -340,9 +340,9 @@ def CreateTeam ():
     table.setStyle(style)
     elems.append(table)
     # Creating a PDF with reportlab
-    pdf = SimpleDocTemplate(os.path.splitext(thisFile)[0] + ".pdf", pagesize=landscape(letter), rightMargin=0, leftMargin=0, topMargin=0, bottomMargin=0)
+    #pdf = SimpleDocTemplate(os.path.splitext(thisFile)[0] + ".pdf", pagesize=landscape(letter), rightMargin=0, leftMargin=0, topMargin=0, bottomMargin=0)
     #pdf.setFont("CousineNFC", 10)
-    pdf.build(elems)
+    #pdf.build(elems)
     return
 
 def updatePlayer(randomBtraits,randompHanded,randomPdice,randomPtraits,surname,prename,randompos,randomOBT,randomBT,pAge):
