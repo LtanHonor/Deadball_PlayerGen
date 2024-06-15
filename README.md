@@ -16,9 +16,9 @@ or
 python -m pip install -r requirements.txt
 
 
-*** PySimpleGUI now requires a license to use.  While it is free, I will be looking into either getting a commercial license... or another gui to use.
+*** PySimpleGUI now requires a license to use.  While it is free, I Do Not like to force others to use something that requires signing up for it.  As such, I have moved to using FreeSimpleGUI found here:https://github.com/spyoungtech/FreeSimpleGUI
 
-Once PySimpleGui is installed, the program is run by:
+Once the requirements are installed, the program is run by:
 
 python PlayerStats.py
 
